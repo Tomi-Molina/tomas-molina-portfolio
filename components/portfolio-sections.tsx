@@ -107,7 +107,9 @@ export function Contact() {
             </a>
 
             <a
-              href="mailto:tomimolina525@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tomimolina525@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="button-quiet"
               aria-label="Enviar un email a Tomás Molina"
             >
