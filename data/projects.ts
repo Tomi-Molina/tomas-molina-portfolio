@@ -15,10 +15,10 @@ export const projects = [
   },
   {
     number: '03',
-    title: 'Telegram Bot con IA',
+    title: 'F1 Telemetry Dashboard',
     description:
-      'Bot desarrollado en Python capaz de interpretar documentos, imágenes y consultas utilizando modelos de inteligencia artificial.',
-    technologies: ['Python', 'Telegram API', 'IA', 'OCR'],
+      'Dashboard full-stack de Fórmula 1 para visualizar resultados, posiciones del campeonato, estadísticas de pilotos y comparaciones entre corredores.',
+    technologies: ['React', 'FastAPI', 'MongoDB', 'Docker'],
   },
 ] as const
 
