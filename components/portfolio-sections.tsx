@@ -36,6 +36,7 @@ export function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             className="project-row group"
+            aria-label={`Ver ${project.title} en GitHub`}
           >
             <div className="flex items-start gap-5 sm:gap-10">
               <span className="pt-1 text-xs text-[#617069]">
