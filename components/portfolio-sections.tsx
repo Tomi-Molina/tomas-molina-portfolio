@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { projects, technologies } from '@/data/projects'
 
 export function About() {
-  return <section id="sobre-mi" className="section-shell border-t border-white/[0.07]"><div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24"><div><p className="eyebrow">Sobre mí</p><h2 className="section-title mt-5">Curioso. Proactivo.<br /><span className="text-[#71837a]">Siempre aprendiendo.</span></h2></div><p className="max-w-xl text-lg leading-8 text-[#a1aaa5] lg:pt-10">Soy Tomás Molina, desarrollador junior de Córdoba con interés en desarrollo web, inteligencia artificial y automatización. Me gusta resolver problemas, aprender nuevas herramientas y transformar ideas en soluciones funcionales.</p></div></section>
+  return <section id="sobre-mi" className="section-shell border-t border-white/[0.07]"><div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24"><div><p className="eyebrow">Sobre mí</p><h2 className="section-title mt-5">Curioso. Proactivo.<br /><span className="text-[#71837a]">Siempre aprendiendo.</span></h2></div><p className="max-w-xl text-lg leading-8 text-[#a1aaa5] lg:pt-10">Soy Tomás Molina, desarrollador junior en Córdoba con interés en desarrollo web, inteligencia artificial y automatización. Me gusta resolver problemas, aprender nuevas herramientas y transformar ideas en soluciones funcionales.</p></div></section>
 }
 
 export function TechStack() {
