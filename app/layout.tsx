@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Tomás Molina — Programador Junior',
-  description: 'Portfolio de Tomás Molina, desarrollador junior de Córdoba especializado en IA, automatizaciones y desarrollo web.',
+  title: 'Tomás Molina | Desarrollador Junior',
+  description: 'Portfolio de Tomás Molina — desarrollo web, inteligencia artificial y automatizaciones.',
   generator: 'v0.app',
 }
 
