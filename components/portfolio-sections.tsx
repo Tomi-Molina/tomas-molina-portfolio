@@ -108,8 +108,9 @@ export function Contact() {
             <a
               href="mailto:tomimolina525@gmail.com"
               className="button-quiet"
+              aria-label="Enviar un email a Tomás Molina"
             >
-              Email <ArrowUpRight className="size-4" />
+              Email <ArrowUpRight aria-hidden="true" className="size-4" />
             </a>
           </div>
 
