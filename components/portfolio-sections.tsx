@@ -10,7 +10,69 @@ export function TechStack() {
 }
 
 export function Projects() {
-  return <section id="proyectos" className="section-shell pt-12 lg:pt-24"><div className="mb-12 flex items-end justify-between gap-6"><div><p className="eyebrow">Proyectos destacados</p><h2 className="section-title mt-5">Ideas que se<br /><span className="text-[#71837a]">vuelven reales.</span></h2></div><span className="hidden text-xs text-[#77847d] sm:block">03 proyectos seleccionados</span></div><div className="flex flex-col">{projects.map((project) => <article key={project.number} className="project-row group"><div className="flex items-start gap-5 sm:gap-10"><span className="pt-1 text-xs text-[#617069]">{project.number}</span><div className="max-w-2xl"><h3 className="text-xl font-medium tracking-[-0.03em] text-[#edf1ed] sm:text-2xl">{project.title}</h3><p className="mt-3 max-w-xl text-sm leading-6 text-[#8d9992]">{project.description}</p><div className="mt-5 flex flex-wrap gap-2">{project.technologies.map((tech) => <span key={tech} className="rounded-full border border-white/[0.1] px-3 py-1 text-[11px] text-[#8e9a94]">{tech}</span>)}</div></div></div><ArrowUpRight aria-hidden="true" className="mt-1 size-5 shrink-0 text-[#788a81] transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></article>)}</div></section>
+  return (
+    <section id="proyectos" className="section-shell pt-12 lg:pt-24">
+      <div className="mb-12 flex items-end justify-between gap-6">
+        <div>
+          <p className="eyebrow">Proyectos destacados</p>
+
+          <h2 className="section-title mt-5">
+            Ideas que se
+            <br />
+            <span className="text-[#71837a]">vuelven reales.</span>
+          </h2>
+        </div>
+
+        <span className="hidden text-xs text-[#77847d] sm:block">
+          03 proyectos seleccionados
+        </span>
+      </div>
+
+      <div className="flex flex-col">
+        {projects.map((project) => (
+          <a
+            key={project.number}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-row group"
+          >
+            <div className="flex items-start gap-5 sm:gap-10">
+              <span className="pt-1 text-xs text-[#617069]">
+                {project.number}
+              </span>
+
+              <div className="max-w-2xl">
+                <h3 className="text-xl font-medium tracking-[-0.03em] text-[#edf1ed] sm:text-2xl">
+                  {project.title}
+                </h3>
+
+                <p className="mt-3 max-w-xl text-sm leading-6 text-[#8d9992]">
+                  {project.description}
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-white/[0.1] px-3 py-1 text-[11px] text-[#8e9a94]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <ArrowUpRight
+              aria-hidden="true"
+              className="mt-1 size-5 shrink-0 text-[#788a81] transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
+            />
+          </a>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 export function Contact() {

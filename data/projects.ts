@@ -5,6 +5,7 @@ export const projects = [
     description:
       'Aplicación para registrar y gestionar gastos utilizando IA para interpretar texto y automatizar la categorización.',
     technologies: ['React', 'FastAPI', 'Python', 'MongoDB', 'IA'],
+    url: 'https://github.com/Tomi-Molina/Expense-tracker',
   },
   {
     number: '02',
@@ -12,6 +13,7 @@ export const projects = [
     description:
       'Sistema que combina inteligencia artificial, datos meteorológicos y simulación de drones para detectar y responder ante incendios.',
     technologies: ['Python', 'IA', 'Open-Meteo', 'NASA FIRMS'],
+    url: 'https://github.com/Tomi-Molina/SRTI-Coder-Cup',
   },
   {
     number: '03',
@@ -19,10 +21,20 @@ export const projects = [
     description:
       'Dashboard full-stack de Fórmula 1 para visualizar resultados, posiciones del campeonato, estadísticas de pilotos y comparaciones entre corredores.',
     technologies: ['React', 'FastAPI', 'MongoDB', 'Docker'],
+    url: 'https://github.com/Tomi-Molina/F1-Dashboard',
   },
 ] as const
 
-export const technologies = ['Python', 'FastAPI', 'React', 'JavaScript', 'MongoDB', 'Git', 'Docker', 'IA / LLMs']
+export const technologies = [
+  'Python',
+  'FastAPI',
+  'React',
+  'JavaScript',
+  'MongoDB',
+  'Git',
+  'Docker',
+  'IA / LLMs',
+] as const
 
 export type Project = (typeof projects)[number]
 
