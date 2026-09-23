@@ -52,8 +52,23 @@ export function Contact() {
           </div>
 
           <div className="mt-16 flex flex-wrap gap-6 text-xs text-[#7f8b85]">
-            <span>LinkedIn ↗</span>
-            <span>GitHub ↗</span>
+            <a
+              href="https://www.linkedin.com/in/tomas-molina-5819513a0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-[#f5f5f2]"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a
+              href="https://github.com/Tomi-Molina"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-[#f5f5f2]"
+            >
+              GitHub ↗
+            </a>
           </div>
         </div>
       </div>
