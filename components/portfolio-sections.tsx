@@ -14,7 +14,51 @@ export function Projects() {
 }
 
 export function Contact() {
-  return <section id="contacto" className="section-shell pb-24 pt-28 lg:pb-32 lg:pt-44"><div className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-[#0d1110] px-6 py-14 sm:px-12 lg:px-20 lg:py-20"><div className="cta-light" /><div className="relative"><p className="eyebrow">Siguiente paso</p><h2 className="mt-6 max-w-2xl text-[clamp(2.8rem,7vw,5.5rem)] font-medium leading-[0.95] tracking-[-0.065em] text-[#f5f5f2]">¿Hablamos?</h2><p className="mt-6 max-w-md text-base leading-7 text-[#9ca7a1]">Estoy buscando mi primera oportunidad profesional en tecnología.</p><div className="mt-9 flex flex-wrap items-center gap-4"><a href="/CV_Tomas_Molina.pdf" download className="button-primary"><span aria-hidden="true">↓</span> Descargar CV</a><span className="button-quiet">Email <ArrowUpRight className="size-4" /></span></div><div className="mt-16 flex flex-wrap gap-6 text-xs text-[#7f8b85]"><span>LinkedIn ↗</span><span>GitHub ↗</span><span>Email ↗</span></div></div></div></section>
+  return (
+    <section
+      id="contacto"
+      className="section-shell pb-24 pt-28 lg:pb-32 lg:pt-44"
+    >
+      <div className="relative overflow-hidden rounded-[2rem] border border-white/[0.08] bg-[#0d1110] px-6 py-14 sm:px-12 lg:px-20 lg:py-20">
+        <div className="cta-light" />
+
+        <div className="relative">
+          <p className="eyebrow">Siguiente paso</p>
+
+          <h2 className="mt-6 max-w-2xl text-[clamp(2.8rem,7vw,5.5rem)] font-medium leading-[0.95] tracking-[-0.065em] text-[#f5f5f2]">
+            ¿Hablamos?
+          </h2>
+
+          <p className="mt-6 max-w-md text-base leading-7 text-[#9ca7a1]">
+            Estoy buscando mi primera oportunidad profesional en tecnología.
+          </p>
+
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <a
+              href="/CV_Tomas_Molina.pdf"
+              download
+              className="button-primary"
+            >
+              <span aria-hidden="true">↓</span>
+              Descargar CV
+            </a>
+
+            <a
+              href="mailto:tomimolina525@gmail.com"
+              className="button-quiet"
+            >
+              Email <ArrowUpRight className="size-4" />
+            </a>
+          </div>
+
+          <div className="mt-16 flex flex-wrap gap-6 text-xs text-[#7f8b85]">
+            <span>LinkedIn ↗</span>
+            <span>GitHub ↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export function Footer() { return <footer className="mx-auto flex max-w-7xl flex-col gap-3 border-t border-white/[0.07] px-6 py-7 text-xs text-[#68756e] sm:flex-row sm:items-center sm:justify-between lg:px-8"><span className="text-[#a4afa9]">Tomás Molina <span className="text-[#68756e]">/ Desarrollador Junior</span></span><span>Córdoba, Argentina · Aprender · Construir · Mejorar</span></footer> }
